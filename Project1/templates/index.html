@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+   " <link rel="stylesheet" href="{% static 'css/hom.css'%}">
+</head>
+<body>
+    <nav>
+        <img src="logo7.png" style="width: 50px;margin-left: 10px;user-select: none;">
+        <h1>Wander<span style="color: white;">.in</span> India</h1>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="Places.html">PLACES</a>
+                <ul>
+                    <li><a href="#">TamilNadu</a></li>
+                    <li><a href="#">Karnataka</a></li>
+                    <li><a href="#">Kerala</a></li>
+                    <li><a href="#">Telangana</a></li>
+                </ul>
+            </li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="Login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Welcome to Wander<span style="color: skyblue;">.in</span> India!</p>
+        <a href="./accounts/logout">logout</a>
+    </div>
+    
+    
+</body>
+</html>

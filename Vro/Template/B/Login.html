@@ -1,0 +1,70 @@
+<html>
+    <head>
+        
+        <title>Login and Registration Form</title>
+        <link rel="stylesheet" href="loginstyle.css">
+        <link rel="stylesheet" href="homestyle.css">
+    </head>
+    <body>
+        <nav>
+            <!-- <img src="logo7.png" style="width: 50px;margin-left: 10px;user-select: none;"> -->
+            <h1>Wander<span>.in</span> India</h1>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="Places.html">PLACES</a>
+                    <ul>
+                        <li><a href=".TN.html">TamilNadu</a></li>
+                        <li><a href=".KA.html">Karnataka</a></li>
+                        <li><a href=".KL.html">Kerala</a></li>
+                        <li><a href=".AP.html">Telangana</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="./Login/">LOGIN</a></li>
+            </ul>
+            </nav>
+            <div class="bg">
+               <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div> 
+                          <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                          <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="social">
+                     <img src="fb.png">
+                     <img src="in.png">
+                     <img src="tw.png"> 
+                </div>
+                <form id="login" class="input-grp">
+                    <input type="text" class="input-field" placeholder="UserID" required>
+                    <input type="password" class="input-field" placeholder="Enter Passwoerd" required>
+                    <input type="checkbox" class="check-bx"><span>Remember Password</span>
+                    <button type="submit" class="log-btn">Login</button>
+                </form>
+                <form id="register" class="input-grp">
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="email" class="input-field" placeholder="Password" required>
+                    <input type="email" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-bx"><span>I agree to the Terms & Conditon</span>
+                    <button type="submit" class="log-btn">Register</button>
+                </form>
+               </div> 
+            </div>
+            <script>
+            var x=document.getElementById("login");
+            var y=document.getElementById("register");
+            var z=document.getElementById("btn");
+            function register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left=" 0px";
+            }
+          </script>
+    </body>
+</html>

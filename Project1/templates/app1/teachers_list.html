@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Experiance</th>
+            <th>Contact</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        {% for s in teachers_list %}
+        <tr>
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.subject}}</td>
+            <td>{{s.exp}}</td>
+            <td>{{s.contact}}</td>
+            <td><a href="/delete1/{{s.id}}">Delete</a></td>
+            <td><a href="/update1/{{s.id}}">Update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+   
+    
+</body>
+</html>
